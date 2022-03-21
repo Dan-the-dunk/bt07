@@ -28,9 +28,19 @@ int main(){
     
     int i = 0, count_rep = 0;
     
-    for(int i = 0 ; str2[i + count - 2 ] != '!' ; i++ ){
-        if()
+    for(int i = 0 ; str2[i + count - 2 ] != '!' ; i = i + 3 ){
+        for(int j = i ;  j <= i + count - 2 ; j ++ ){
+            char str_current[count];
+            str_current[0] = str2[j];
+            str_current[1] = str2[j + 1];
+            str_current[2] = str2[j + 2];
+            if(strcmp(str_small,str_current) == 0 ){
+                count_rep ++;
+            }
+            cout<<str_current<<endl;
+        }
     }
+
     
 
 
